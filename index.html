@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Esercizio Burger</title>
+</head>
+<body> 
+    <div class="container-burger container">
+         <header class="row position-relative pt-4 mb-2">
+             <h1>Create Your Burger</h1>
+             <div class="burger-logo">
+                 <img src="./img/burger-top.png" alt="">
+             </div>
+        </header>
+            <input type="text" id="order-burger" placeholder="Dai un nome al tuo panino!" value="" >
+            <h1 id="burger-name"></h1>
+            <h4>Ingredients</h4>
+        <form class= "row-burger row">
+            <div class="col-6 ">
+                <div class="ingredient m-3">
+                    <img src="./img/cheese.svg" alt="cheese">
+                    <label for="check-ingre1">Cheese</label>
+                    <input type="checkbox" id= "check-ingre1" class="somma-check" value="10">
+                    <label for="check-ingre1"class="color">add</label> <!--CHEESE 10-->
+                </div>
+                <div class="ingredient m-3">
+                    <img src="./img/fried-egg.svg" alt="egg">
+                    <label for="check-ingre2">Egg</label>
+                    <input type="checkbox" id= "check-ingre2" class="somma-check" value="20">
+                    <label for="check-ingre2" class="color">add</label> <!--EGG 20-->
+                </div>
+                <div class="ingredient m-3">
+                    <img src="./img/mustard.svg" alt="mustard">
+                    <label for="check-ingre3">Mustard</label>
+                    <input type="checkbox" id= "check-ingre3" class="somma-check" value="5">
+                    <label for="check-ingre3" class="color">add</label> <!--MUSTARD 5-->
+                </div>
+            </div>
+
+            <div class="col-6 ">
+                <div class="ingredient m-3">
+                    <img src="./img/tomato.svg" alt="tomato">
+                    <label for="check-ingre4">Tomato</label>
+                    <input type="checkbox" id= "check-ingre4" class="somma-check" value="50">
+                    <label for="check-ingre4" class="color">add</label> <!--TOMATO 50-->
+                </div>
+                <div class="ingredient m-3">
+                    <img src="./img/lettuce.svg" alt="lettuce">
+                    <label for="check-ingre5">Lettuce</label>
+                    <input type="checkbox" id= "check-ingre5" class="somma-check" value="15">
+                    <label for="check-ingre5" class="color">add</label> <!--LETTUCE 15-->
+                </div>
+                <div class="ingredient m-3">
+                    <img src="./img/ketchup.svg" alt="ketchup">
+                    <label for="check-ingre6"> Ketchup </label>
+                    <input type="checkbox" id= "check-ingre6" class="somma-check" value="25">
+                    <label for="check-ingre6" class="color">add</label> <!--KETCHUP 25-->
+                </div>
+            </div>
+
+             <div class="final-price">
+                <label>Discount Coupon</label>  
+                <input type="text" id="discount" value="" class="input-discount">
+                <br>
+                <div class="d-flex justify-content-center m-5">
+                    <button type="button" class="btn btn-outline-warning" id="somma-button">Calculate</button>
+                </div>
+            </div>
+        </form>
+    
+        <footer class="row footer-price" >
+            <div class="d-flex justify-content-around align-items-center">
+                <h4>Your Price</h4>
+                <div id="your-price"></div>
+            </div>
+        </footer>
+    
+        <script type="text/javascript"src="js/main.js"></script>
+    </div>  
+</body>
+</html>

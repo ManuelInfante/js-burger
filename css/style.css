@@ -1,0 +1,54 @@
+body{
+    background-color: bisque;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: white;
+}
+header{
+    height: 90px;
+    background-color: rgb(253,187,64); 
+}
+header h1{
+    font-size: 40px;
+    text-align: start;
+    font-weight: 500;
+}
+.burger-logo img{
+   position: absolute;
+    top: -25px;
+    right: -50px;
+}
+#order-burger{
+    width: 300px;
+}
+.ingredient{
+width: 70px;
+display: flex;
+align-items: center;
+}
+.ingredient label{
+    padding: 10px;
+    font-weight: 600;
+}
+.color{
+    color: red;
+}
+.input-discount{
+    width: 800px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+footer{
+    height: 80px;
+    background-color: #ff1a75;
+}
+.footer-price{
+    color: white;
+    font-weight: 600;
+}
+
+#your-price{
+    font-size: 20px;
+}
